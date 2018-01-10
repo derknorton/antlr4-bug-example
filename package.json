@@ -1,0 +1,31 @@
+{
+  "name": "antlr4-bug-example",
+  "version": "1.0.0",
+  "description": "This project demonstrates an apparent problem with the way the antlr4 handles the precedences for left recursive expressions.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:derknorton/antlr4-bug-example.git"
+  },
+  "main": "BugExample.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "antlr4": "^4.7.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-antlr4": "^0.1.6",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-nodeunit": "^1.0.0",
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt generate build"
+  },
+  "author": "Derk Norton",
+  "license": "MIT"
+}

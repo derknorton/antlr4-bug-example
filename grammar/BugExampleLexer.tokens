@@ -1,0 +1,11 @@
+T__0=1
+T__1=2
+T__2=3
+FRACTION=4
+CONSTANT=5
+FLOAT=6
+IDENTIFIER=7
+SPACE=8
+'-'=1
+'/'=2
+'*'=3
