@@ -7,26 +7,25 @@ var BugExampleVisitor = require('./BugExampleVisitor').BugExampleVisitor;
 var grammarFileName = "BugExample.g4";
 
 var serializedATN = ["\u0003\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd",
-    "\u0003\n\u001d\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
+    "\u0003\b\u001d\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
     "\u0004\u0004\u0005\t\u0005\u0003\u0002\u0003\u0002\u0003\u0002\u0003",
     "\u0003\u0005\u0003\u000f\n\u0003\u0003\u0003\u0003\u0003\u0005\u0003",
     "\u0013\n\u0003\u0003\u0004\u0003\u0004\u0003\u0005\u0003\u0005\u0003",
     "\u0005\u0003\u0005\u0005\u0005\u001b\n\u0005\u0003\u0005\u0002\u0002",
-    "\u0006\u0002\u0004\u0006\b\u0002\u0003\u0003\u0002\u0003\u0005\u001c",
-    "\u0002\n\u0003\u0002\u0002\u0002\u0004\u0012\u0003\u0002\u0002\u0002",
-    "\u0006\u0014\u0003\u0002\u0002\u0002\b\u001a\u0003\u0002\u0002\u0002",
-    "\n\u000b\u0005\b\u0005\u0002\u000b\f\u0007\u0002\u0002\u0003\f\u0003",
-    "\u0003\u0002\u0002\u0002\r\u000f\u0007\u0003\u0002\u0002\u000e\r\u0003",
-    "\u0002\u0002\u0002\u000e\u000f\u0003\u0002\u0002\u0002\u000f\u0010\u0003",
-    "\u0002\u0002\u0002\u0010\u0013\u0007\u0007\u0002\u0002\u0011\u0013\u0007",
-    "\b\u0002\u0002\u0012\u000e\u0003\u0002\u0002\u0002\u0012\u0011\u0003",
-    "\u0002\u0002\u0002\u0013\u0005\u0003\u0002\u0002\u0002\u0014\u0015\u0007",
-    "\t\u0002\u0002\u0015\u0007\u0003\u0002\u0002\u0002\u0016\u001b\u0005",
-    "\u0004\u0003\u0002\u0017\u001b\u0005\u0006\u0004\u0002\u0018\u0019\t",
-    "\u0002\u0002\u0002\u0019\u001b\u0005\b\u0005\u0002\u001a\u0016\u0003",
-    "\u0002\u0002\u0002\u001a\u0017\u0003\u0002\u0002\u0002\u001a\u0018\u0003",
-    "\u0002\u0002\u0002\u001b\t\u0003\u0002\u0002\u0002\u0005\u000e\u0012",
-    "\u001a"].join("");
+    "\u0006\u0002\u0004\u0006\b\u0002\u0002\u001c\u0002\n\u0003\u0002\u0002",
+    "\u0002\u0004\u0012\u0003\u0002\u0002\u0002\u0006\u0014\u0003\u0002\u0002",
+    "\u0002\b\u001a\u0003\u0002\u0002\u0002\n\u000b\u0005\b\u0005\u0002\u000b",
+    "\f\u0007\u0002\u0002\u0003\f\u0003\u0003\u0002\u0002\u0002\r\u000f\u0007",
+    "\u0003\u0002\u0002\u000e\r\u0003\u0002\u0002\u0002\u000e\u000f\u0003",
+    "\u0002\u0002\u0002\u000f\u0010\u0003\u0002\u0002\u0002\u0010\u0013\u0007",
+    "\u0005\u0002\u0002\u0011\u0013\u0007\u0006\u0002\u0002\u0012\u000e\u0003",
+    "\u0002\u0002\u0002\u0012\u0011\u0003\u0002\u0002\u0002\u0013\u0005\u0003",
+    "\u0002\u0002\u0002\u0014\u0015\u0007\u0007\u0002\u0002\u0015\u0007\u0003",
+    "\u0002\u0002\u0002\u0016\u001b\u0005\u0004\u0003\u0002\u0017\u001b\u0005",
+    "\u0006\u0004\u0002\u0018\u0019\u0007\u0003\u0002\u0002\u0019\u001b\u0005",
+    "\b\u0005\u0002\u001a\u0016\u0003\u0002\u0002\u0002\u001a\u0017\u0003",
+    "\u0002\u0002\u0002\u001a\u0018\u0003\u0002\u0002\u0002\u001b\t\u0003",
+    "\u0002\u0002\u0002\u0005\u000e\u0012\u001a"].join("");
 
 
 var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -35,10 +34,10 @@ var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new a
 
 var sharedContextCache = new antlr4.PredictionContextCache();
 
-var literalNames = [ 'null', "'-'", "'/'", "'*'" ];
+var literalNames = [ 'null', "'-'" ];
 
-var symbolicNames = [ 'null', 'null', 'null', 'null', "FRACTION", "CONSTANT", 
-                      "FLOAT", "IDENTIFIER", "SPACE" ];
+var symbolicNames = [ 'null', 'null', "FRACTION", "CONSTANT", "FLOAT", "IDENTIFIER", 
+                      "SPACE" ];
 
 var ruleNames =  [ "value", "real", "variable", "expression" ];
 
@@ -62,13 +61,11 @@ Object.defineProperty(BugExampleParser.prototype, "atn", {
 
 BugExampleParser.EOF = antlr4.Token.EOF;
 BugExampleParser.T__0 = 1;
-BugExampleParser.T__1 = 2;
-BugExampleParser.T__2 = 3;
-BugExampleParser.FRACTION = 4;
-BugExampleParser.CONSTANT = 5;
-BugExampleParser.FLOAT = 6;
-BugExampleParser.IDENTIFIER = 7;
-BugExampleParser.SPACE = 8;
+BugExampleParser.FRACTION = 2;
+BugExampleParser.CONSTANT = 3;
+BugExampleParser.FLOAT = 4;
+BugExampleParser.IDENTIFIER = 5;
+BugExampleParser.SPACE = 6;
 
 BugExampleParser.RULE_value = 0;
 BugExampleParser.RULE_real = 1;
@@ -416,7 +413,6 @@ RealExpressionContext.prototype.accept = function(visitor) {
 
 function InversionExpressionContext(parser, ctx) {
 	ExpressionContext.call(this, parser);
-    this.op = null; // Token;
     ExpressionContext.prototype.copyFrom.call(this, ctx);
     return this;
 }
@@ -492,7 +488,6 @@ BugExampleParser.prototype.expression = function() {
 
     var localctx = new ExpressionContext(this, this._ctx, this.state);
     this.enterRule(localctx, 6, BugExampleParser.RULE_expression);
-    var _la = 0; // Token type
     try {
         this.state = 24;
         var la_ = this._interp.adaptivePredict(this._input,2,this._ctx);
@@ -515,14 +510,7 @@ BugExampleParser.prototype.expression = function() {
             localctx = new InversionExpressionContext(this, localctx);
             this.enterOuterAlt(localctx, 3);
             this.state = 22;
-            localctx.op = this._input.LT(1);
-            _la = this._input.LA(1);
-            if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << BugExampleParser.T__0) | (1 << BugExampleParser.T__1) | (1 << BugExampleParser.T__2))) !== 0))) {
-                localctx.op = this._errHandler.recoverInline(this);
-            }
-            else {
-                this.consume();
-            }
+            this.match(BugExampleParser.T__0);
             this.state = 23;
             this.expression();
             break;

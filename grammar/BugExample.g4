@@ -12,10 +12,10 @@ real:
 variable: IDENTIFIER ;
 
 expression:  // Precedence (highest to lowest)
-    real                              #realExpression      |
-    variable                          #variableExpression  |
-//  expression '!'                    #factorialExpression |
-    op=('-' | '/' | '*') expression   #inversionExpression
+    real             #realExpression      |
+    variable         #variableExpression  |
+//  expression '!'   #factorialExpression |
+    '-' expression   #inversionExpression
 ;
 
 
