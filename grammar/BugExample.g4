@@ -14,7 +14,7 @@ variable: IDENTIFIER ;
 expression:  // Precedence (highest to lowest)
     real             #realExpression      |
     variable         #variableExpression  |
-    expression '!'   #factorialExpression |
+//  expression '!'   #factorialExpression |
     '-' expression   #inversionExpression
 ;
 
