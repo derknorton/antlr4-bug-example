@@ -37,13 +37,18 @@ BugExampleVisitor.prototype.visitRealExpression = function(ctx) {
 };
 
 
-// Visit a parse tree produced by BugExampleParser#variableExpression.
-BugExampleVisitor.prototype.visitVariableExpression = function(ctx) {
+// Visit a parse tree produced by BugExampleParser#inversionExpression.
+BugExampleVisitor.prototype.visitInversionExpression = function(ctx) {
 };
 
 
-// Visit a parse tree produced by BugExampleParser#inversionExpression.
-BugExampleVisitor.prototype.visitInversionExpression = function(ctx) {
+// Visit a parse tree produced by BugExampleParser#factorialExpression.
+BugExampleVisitor.prototype.visitFactorialExpression = function(ctx) {
+};
+
+
+// Visit a parse tree produced by BugExampleParser#variableExpression.
+BugExampleVisitor.prototype.visitVariableExpression = function(ctx) {
 };
 
 

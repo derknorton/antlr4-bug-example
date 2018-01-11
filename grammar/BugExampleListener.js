@@ -56,21 +56,30 @@ BugExampleListener.prototype.exitRealExpression = function(ctx) {
 };
 
 
-// Enter a parse tree produced by BugExampleParser#variableExpression.
-BugExampleListener.prototype.enterVariableExpression = function(ctx) {
-};
-
-// Exit a parse tree produced by BugExampleParser#variableExpression.
-BugExampleListener.prototype.exitVariableExpression = function(ctx) {
-};
-
-
 // Enter a parse tree produced by BugExampleParser#inversionExpression.
 BugExampleListener.prototype.enterInversionExpression = function(ctx) {
 };
 
 // Exit a parse tree produced by BugExampleParser#inversionExpression.
 BugExampleListener.prototype.exitInversionExpression = function(ctx) {
+};
+
+
+// Enter a parse tree produced by BugExampleParser#factorialExpression.
+BugExampleListener.prototype.enterFactorialExpression = function(ctx) {
+};
+
+// Exit a parse tree produced by BugExampleParser#factorialExpression.
+BugExampleListener.prototype.exitFactorialExpression = function(ctx) {
+};
+
+
+// Enter a parse tree produced by BugExampleParser#variableExpression.
+BugExampleListener.prototype.enterVariableExpression = function(ctx) {
+};
+
+// Exit a parse tree produced by BugExampleParser#variableExpression.
+BugExampleListener.prototype.exitVariableExpression = function(ctx) {
 };
 
 
