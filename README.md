@@ -85,6 +85,8 @@ I suspect this is the problem but the code is too complex for my poor brain ;-) 
 
 This issue was first raised here: [https://stackoverflow.com/questions/48195702/my-antlr-4-left-recursive-expression-not-preserving-the-expression-precedence-or]
 
+An issue has been submitted at the Antlr 4 GitHub project: [https://github.com/antlr/antlr4/issues/2201]
+
 ### Downloading and Installing
 To download this project and install it do the following:
 ```
