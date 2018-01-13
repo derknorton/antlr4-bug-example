@@ -1,4 +1,4 @@
-// Generated from grammar/BugExample.g4 by ANTLR 4.5.1
+// Generated from grammar/BugExample.g4 by ANTLR 4.7.1
 // jshint ignore: start
 var antlr4 = require('antlr4/index');
 var BugExampleListener = require('./BugExampleListener').BugExampleListener;
@@ -6,31 +6,31 @@ var BugExampleVisitor = require('./BugExampleVisitor').BugExampleVisitor;
 
 var grammarFileName = "BugExample.g4";
 
-var serializedATN = ["\u0003\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd",
+var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u0003\t%\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t\u0004",
     "\u0004\u0005\t\u0005\u0003\u0002\u0003\u0002\u0003\u0002\u0003\u0003",
     "\u0005\u0003\u000f\n\u0003\u0003\u0003\u0003\u0003\u0005\u0003\u0013",
     "\n\u0003\u0003\u0004\u0003\u0004\u0003\u0005\u0003\u0005\u0003\u0005",
     "\u0003\u0005\u0003\u0005\u0005\u0005\u001c\n\u0005\u0003\u0005\u0003",
     "\u0005\u0007\u0005 \n\u0005\f\u0005\u000e\u0005#\u000b\u0005\u0003\u0005",
-    "\u0002\u0003\b\u0006\u0002\u0004\u0006\b\u0002\u0002%\u0002\n\u0003",
-    "\u0002\u0002\u0002\u0004\u0012\u0003\u0002\u0002\u0002\u0006\u0014\u0003",
-    "\u0002\u0002\u0002\b\u001b\u0003\u0002\u0002\u0002\n\u000b\u0005\b\u0005",
-    "\u0002\u000b\f\u0007\u0002\u0002\u0003\f\u0003\u0003\u0002\u0002\u0002",
-    "\r\u000f\u0007\u0003\u0002\u0002\u000e\r\u0003\u0002\u0002\u0002\u000e",
-    "\u000f\u0003\u0002\u0002\u0002\u000f\u0010\u0003\u0002\u0002\u0002\u0010",
-    "\u0013\u0007\u0006\u0002\u0002\u0011\u0013\u0007\u0007\u0002\u0002\u0012",
-    "\u000e\u0003\u0002\u0002\u0002\u0012\u0011\u0003\u0002\u0002\u0002\u0013",
-    "\u0005\u0003\u0002\u0002\u0002\u0014\u0015\u0007\b\u0002\u0002\u0015",
-    "\u0007\u0003\u0002\u0002\u0002\u0016\u0017\b\u0005\u0001\u0002\u0017",
-    "\u0018\u0007\u0003\u0002\u0002\u0018\u001c\u0005\b\u0005\u0003\u0019",
-    "\u001c\u0005\u0004\u0003\u0002\u001a\u001c\u0005\u0006\u0004\u0002\u001b",
-    "\u0016\u0003\u0002\u0002\u0002\u001b\u0019\u0003\u0002\u0002\u0002\u001b",
-    "\u001a\u0003\u0002\u0002\u0002\u001c!\u0003\u0002\u0002\u0002\u001d",
-    "\u001e\f\u0004\u0002\u0002\u001e \u0007\u0004\u0002\u0002\u001f\u001d",
-    "\u0003\u0002\u0002\u0002 #\u0003\u0002\u0002\u0002!\u001f\u0003\u0002",
-    "\u0002\u0002!\"\u0003\u0002\u0002\u0002\"\t\u0003\u0002\u0002\u0002",
-    "#!\u0003\u0002\u0002\u0002\u0006\u000e\u0012\u001b!"].join("");
+    "\u0002\u0003\b\u0006\u0002\u0004\u0006\b\u0002\u0002\u0002%\u0002\n",
+    "\u0003\u0002\u0002\u0002\u0004\u0012\u0003\u0002\u0002\u0002\u0006\u0014",
+    "\u0003\u0002\u0002\u0002\b\u001b\u0003\u0002\u0002\u0002\n\u000b\u0005",
+    "\b\u0005\u0002\u000b\f\u0007\u0002\u0002\u0003\f\u0003\u0003\u0002\u0002",
+    "\u0002\r\u000f\u0007\u0003\u0002\u0002\u000e\r\u0003\u0002\u0002\u0002",
+    "\u000e\u000f\u0003\u0002\u0002\u0002\u000f\u0010\u0003\u0002\u0002\u0002",
+    "\u0010\u0013\u0007\u0006\u0002\u0002\u0011\u0013\u0007\u0007\u0002\u0002",
+    "\u0012\u000e\u0003\u0002\u0002\u0002\u0012\u0011\u0003\u0002\u0002\u0002",
+    "\u0013\u0005\u0003\u0002\u0002\u0002\u0014\u0015\u0007\b\u0002\u0002",
+    "\u0015\u0007\u0003\u0002\u0002\u0002\u0016\u0017\b\u0005\u0001\u0002",
+    "\u0017\u001c\u0005\u0004\u0003\u0002\u0018\u001c\u0005\u0006\u0004\u0002",
+    "\u0019\u001a\u0007\u0003\u0002\u0002\u001a\u001c\u0005\b\u0005\u0003",
+    "\u001b\u0016\u0003\u0002\u0002\u0002\u001b\u0018\u0003\u0002\u0002\u0002",
+    "\u001b\u0019\u0003\u0002\u0002\u0002\u001c!\u0003\u0002\u0002\u0002",
+    "\u001d\u001e\f\u0004\u0002\u0002\u001e \u0007\u0004\u0002\u0002\u001f",
+    "\u001d\u0003\u0002\u0002\u0002 #\u0003\u0002\u0002\u0002!\u001f\u0003",
+    "\u0002\u0002\u0002!\"\u0003\u0002\u0002\u0002\"\t\u0003\u0002\u0002",
+    "\u0002#!\u0003\u0002\u0002\u0002\u0006\u000e\u0012\u001b!"].join("");
 
 
 var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
@@ -39,9 +39,9 @@ var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new a
 
 var sharedContextCache = new antlr4.PredictionContextCache();
 
-var literalNames = [ 'null', "'-'", "'!'" ];
+var literalNames = [ null, "'-'", "'!'" ];
 
-var symbolicNames = [ 'null', 'null', 'null', "FRACTION", "CONSTANT", "FLOAT", 
+var symbolicNames = [ null, null, null, "FRACTION", "CONSTANT", "FLOAT", 
                       "IDENTIFIER", "SPACE" ];
 
 var ruleNames =  [ "value", "real", "variable", "expression" ];
@@ -254,12 +254,14 @@ BugExampleParser.prototype.real = function() {
     var _la = 0; // Token type
     try {
         this.state = 16;
+        this._errHandler.sync(this);
         switch(this._input.LA(1)) {
         case BugExampleParser.T__0:
         case BugExampleParser.CONSTANT:
             localctx = new ConstantRealContext(this, localctx);
             this.enterOuterAlt(localctx, 1);
             this.state = 12;
+            this._errHandler.sync(this);
             _la = this._input.LA(1);
             if(_la===BugExampleParser.T__0) {
                 this.state = 11;
@@ -535,33 +537,34 @@ BugExampleParser.prototype.expression = function(_p) {
     try {
         this.enterOuterAlt(localctx, 1);
         this.state = 25;
+        this._errHandler.sync(this);
         var la_ = this._interp.adaptivePredict(this._input,2,this._ctx);
         switch(la_) {
         case 1:
-            localctx = new InversionExpressionContext(this, localctx);
+            localctx = new RealExpressionContext(this, localctx);
             this._ctx = localctx;
             _prevctx = localctx;
 
             this.state = 21;
-            this.match(BugExampleParser.T__0);
-            this.state = 22;
-            this.expression(1);
-            break;
-
-        case 2:
-            localctx = new RealExpressionContext(this, localctx);
-            this._ctx = localctx;
-            _prevctx = localctx;
-            this.state = 23;
             this.real();
             break;
 
-        case 3:
+        case 2:
             localctx = new VariableExpressionContext(this, localctx);
             this._ctx = localctx;
             _prevctx = localctx;
-            this.state = 24;
+            this.state = 22;
             this.variable();
+            break;
+
+        case 3:
+            localctx = new InversionExpressionContext(this, localctx);
+            this._ctx = localctx;
+            _prevctx = localctx;
+            this.state = 23;
+            this.match(BugExampleParser.T__0);
+            this.state = 24;
+            this.expression(1);
             break;
 
         }
