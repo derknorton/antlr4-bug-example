@@ -375,3 +375,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
 The Java unit tests worked correctly.
 
+### Resolution
+The problem existed in version 4.5.1 of the antlr complete jar but was fixed by version 4.7.1.  A big "shout out" to
+Eric Vergnaud for diagnosing the root problem.  This project has been updated to use 4.7.1 to show that it is fixed.
+
